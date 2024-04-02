@@ -1,0 +1,7 @@
+__pycache__/
+certs/*
+data/*
+gnupg/*
+password-store/*
+!**/.gitkeep
+client_secrets.py

@@ -1,0 +1,16 @@
+services:
+  tesla:
+    restart: unless-stopped
+    build: build-context
+    ports:
+      - "127.0.0.1:4448:4448"
+    volumes:
+      - type: bind
+        source: ./gnupg
+        target: /home/tesla/.gnupg
+      - type: bind
+        source: ./password-store
+        target: /home/tesla/.password-store
+      - type: bind
+        source: ./certs
+        target: /certs
