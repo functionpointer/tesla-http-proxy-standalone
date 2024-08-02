@@ -21,7 +21,7 @@ Installation
 
 1. Choose a subdomain. I will use `tesla.<your domain>.com` in this documentation
 2. clone this repo
-3. copy `client_secrets.py.template` to `client_secret.py`
+3. copy `client_secrets.py.template` to `client_secrets.py`
 4. in `client_secrets.py`, edit `REGION` to reflect your region, edit `DOMAIN` to reflect your domain
 5. run `step_1_run_keygen.py`
 6. Request application at `developer.tesla.com`. See [here](https://github.com/llamafilm/tesla-http-proxy-addon/blob/main/tesla_http_proxy/DOCS.md#how-to-use) for more info.
