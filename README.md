@@ -21,14 +21,14 @@ Installation
 
 1. Choose a subdomain. I will use `tesla.<your domain>.com` in this documentation
 2. clone this repo
-3. copy `client_secret.py.template` to `client_secret.py`
-4. in `client_secret.py`, edit `REGION` to reflect your region, edit `DOMAIN` to reflect your domain
+3. copy `client_secrets.py.template` to `client_secret.py`
+4. in `client_secrets.py`, edit `REGION` to reflect your region, edit `DOMAIN` to reflect your domain
 5. run `step_1_run_keygen.py`
 6. Request application at `developer.tesla.com`. See [here](https://github.com/llamafilm/tesla-http-proxy-addon/blob/main/tesla_http_proxy/DOCS.md#how-to-use) for more info.
    Do not choose the Open Source plan, as you will need the client secret.
    Choose `https://tesla.<your domain>.com` as allowed origin, and `https://tesla.<your domain>.com/callback` as redirect URI.
    Choose all scopes.
-7. You will get a Client ID and Client Secret. Copy them into `client_secret.py`.
+7. You will get a Client ID and Client Secret. Copy them into `client_secrets.py`.
 8. add this to your nginx:
 ```
 server {
