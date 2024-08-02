@@ -19,7 +19,7 @@ What you will need
 Installation
 ============
 
-1. Choose a subdomain. I will use tesla.<your domain>.com in this documentation
+1. Choose a subdomain. I will use `tesla.<your domain>.com` in this documentation
 2. clone this repo
 3. copy `client_secret.py.template` to `client_secret.py`
 4. in `client_secret.py`, edit `REGION` to reflect your region, edit `DOMAIN` to reflect your domain
