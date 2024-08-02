@@ -58,9 +58,10 @@ server {
 
 }
 ```
-9. run the other `step_*_.py` scripts in order. follow the instructions.
-10. Eventually you will need to start the container: `docker compose up -d`
-11. Finally, set up the [HomeAssistant Tesla Custom integraton](https://github.com/alandtse/tesla). If you already have it configured, you will have to delete the integration and set it up again. Don't worry, HA doesn't delete your history.
+9. reload nginx and check the certificate is available at `https://tesla.<your-domain>.com/.well-known/appspecific/com.tesla.3p.public-key.pem`.
+10. run the other `step_*_.py` scripts in order. follow the instructions.
+11. Eventually you will need to start the container: `docker compose up -d`
+12. Finally, set up the [HomeAssistant Tesla Custom integraton](https://github.com/alandtse/tesla). If you already have it configured, you will have to delete the integration and set it up again. Don't worry, HA doesn't delete your history.
 
 What it does
 ============
